@@ -5,8 +5,6 @@ fn rotate(s: String, n: isize) -> String {
     }
 
     let n = n.rem_euclid(len as isize) as usize;
-
-    // Зсув вправо на n символів = відрізати з кінця n символів і поставити на початок
     let split = len - n;
     format!("{}{}", &s[split..], &s[..split])
 }
