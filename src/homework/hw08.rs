@@ -32,7 +32,7 @@ fn test_is_prime() {
     
         test_data.iter().for_each(|(n, expected)| {
         let result = is_prime(n);
-        println!("Checking {} → Result: {}, Expected: {}", n, result, expected);
+        println!("Checking {} > Result: {}, Expected: {}", n, result, expected);
 
         assert_eq!(result, *expected);
     });

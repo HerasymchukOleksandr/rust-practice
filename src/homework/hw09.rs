@@ -26,7 +26,7 @@ fn test() {
 
     shifts.iter().for_each(|(n, expected)| {
         let result = rotate(s.clone(), *n);
-        println!("rotate({}, {}) → {}", s, n, result);
+        println!("rotate({}, {}) > {}", s, n, result);
         assert_eq!(result, expected.to_string());
     });
 }
