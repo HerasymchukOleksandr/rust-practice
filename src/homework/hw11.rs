@@ -23,14 +23,14 @@ fn min_adjacent_sum(data: &[i32]) -> (usize, i32, i32) {
 fn print_vector_with_min_pair(data: &[i32]) {
     let (i, a, b) = min_adjacent_sum(data);
 
-    // Вивід індексів
+
     print!("indexes: ");
     for i in 0..data.len() {
         print!("{:>3}.", i);
     }
     println!();
 
-    // Вивід даних
+  
     print!("data:   [");
     for (j, val) in data.iter().enumerate() {
         print!("{:>2}", val);
@@ -40,7 +40,7 @@ fn print_vector_with_min_pair(data: &[i32]) {
     }
     println!("]");
 
-    // Підкреслення
+
     print!("indexes:");
     for j in 0..data.len() {
         if j == i {
